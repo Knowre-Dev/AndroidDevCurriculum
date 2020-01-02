@@ -124,7 +124,7 @@
     - [App bundle](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/Release/AppBundle/AppBundle.md)
     - [Play store](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/Release/PlayStore/PlayStore.md)
     
-- [📌 Knowre Android tesm Specific](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/KnowreSpecific/KnowreSpecific.md)
+- [📌 Knowre Android team Specific](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/KnowreSpecific/KnowreSpecific.md)
     - [Distributions](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/KnowreSpecific/Distributions.md)
     - [Code style](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/KnowreSpecific/CodeStyle.md)
     - [Versioning](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/KnowreSpecific/Versioning.md)
