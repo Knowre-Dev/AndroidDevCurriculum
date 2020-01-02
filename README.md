@@ -32,7 +32,7 @@
     - [List](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/DataStructure/List/List.md)
     - [HashMap](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/DataStructure/HashMap/HashMap.md)
     - [Set](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/DataStructure/Set/Set.md)
-    - [Deque](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/DataStructure/Dequeue/Dequeue.md)
+    - [Dequeue](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/DataStructure/Dequeue/Dequeue.md)
   - [Network](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/Network/Network.md)
     - [OSI 7 Layer](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/Network/Osi7Layer/Osi7Layer.md)
     - [Http](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/Network/Http/Http.md)
