@@ -12,7 +12,7 @@
   - 오타수정, 정렬 등과 관련해서는 direct push 합니다.
   - 커리큘럼 내용 입력, 잘못된 정보 수정 등은 PR 을 요청합니다.
 
-# 🗺 Curriculum map
+# 🗺 [Curriculum map](https://docs.google.com/drawings/d/1iK5cBjQaD_N-mKV2kRpiic7Iss0ZHghfud8N_MKk4-Y/edit?usp=sharing)
 
 ![curriculum](/AndroidDevCurriculum.png)
 
