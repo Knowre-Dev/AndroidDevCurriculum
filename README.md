@@ -21,8 +21,8 @@
 
 - [📌 Prerequisites](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/Prerequisites.md)
   - [Computer science](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/ComputerScience/ComputerScience.md)
-    - [FloatingPoint](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/ComputerScience/FloatingPoint/FloatingPoint.md)
-  - [ProgramLanguage](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/ProgrammingLanguage/ProgrammingLanguage.md)
+    - [Floating point](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/ComputerScience/FloatingPoint/FloatingPoint.md)
+  - [Program language](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/ProgrammingLanguage/ProgrammingLanguage.md)
     - [Java](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/ProgrammingLanguage/Java/Java.md)
     - [Kotlin🏅](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/ProgrammingLanguage/Kotlin/Kotlin.md)
     - [Groovy](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Prerequisites/ProgrammingLanguage/Groovy/Groovy.md)
