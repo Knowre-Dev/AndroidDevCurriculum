@@ -7,13 +7,13 @@
 ``` kotlin
 @Test
 fun floating_point() {
-val first  = 1.5F
-val second = 0.3F
+  val first  = 1.5F
+  val second = 0.3F
 
-val expected = 0.45F
-val actual   = first * second
+  val expected = 0.45F
+  val actual   = first * second
 
-assertThat(actual).isEqualTo(expected)
+  assertThat(actual).isEqualTo(expected)
 }
 
 // org.junit.ComparisonFailure: 
@@ -136,13 +136,13 @@ assertThat(actual).isEqualTo(expected)
 ``` kotlin
 @Test
 fun floating_point() {
-val first  = BigDecimal(1.5F.toString()) /** 스트링을 바꾸지 않으면 여전히 오차가 발생한다. */
-val second = 0.3F.toBigDecimal() /** 이렇게 써도 무방 */
+  val first  = BigDecimal(1.5F.toString()) /** 스트링을 바꾸지 않으면 여전히 오차가 발생한다. */
+  val second = 0.3F.toBigDecimal() /** 이렇게 써도 무방 */
 
-val expected = 0.45F
-val actual   = (first * second).toFloat() /** 코틀린에 연산자 오버로드되어 있음 */
+  val expected = 0.45F
+  val actual   = (first * second).toFloat() /** 코틀린에 연산자 오버로드되어 있음 */
 
-assertThat(actual).isEqualTo(expected)
+  assertThat(actual).isEqualTo(expected)
 }
 
 //Test passed: 1 of 1 test
