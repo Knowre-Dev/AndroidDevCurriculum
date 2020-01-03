@@ -94,7 +94,7 @@ fun floating_point() {
 
 ![부동소수점](/Prerequisites/ComputerScience/FloatingPoint/Images/floating_point_structure.png)
 
-위처럼 고정 소수점은 그 표현범위가 매우 작다. 때문에 표현 범위를 넓힐 수 있는 방식에 대한 고민으로 부동 소수점이 나왔고 이의 표준이 [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754)(전기 전자 기술자 협회 부동 소수점 표현 방식 표존)이다.
+위처럼 고정 소수점은 그 표현범위가 매우 작다. 때문에 표현 범위를 넓힐 수 있는 방식에 대한 고민으로 부동 소수점이 나왔고 이의 표준이 [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754)(전기 전자 기술자 협회 부동 소수점 표현 방식 표준)이다.
 이에 대해 알아보자.
 
 - 표현방식
