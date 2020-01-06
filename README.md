@@ -80,6 +80,7 @@
       - [VersionCode Overriding](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/BuildConfiguration/BuildConfigField/VersionCodeOverriding/VersionCodeOverriding.md)
     - [SigningConfig](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/BuildConfiguration/SigningConfig/SigningConfig.md)
   - [Device support](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/DeviceSupport/DeviceSupport.md)
+    - [AndroidRuntime](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/DeviceSupport/AndroidRuntime/AndroidRuntime.md)
     - [ConfigurationChanges](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/DeviceSupport/ConfigurationChange/ConfigurationChange.md)
     - [ApplicationRestart](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/DeviceSupport/ApplicationRestart/ApplicationRestart.md)
     - [Api specific](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/DeviceSupport/ApiSpecific/ApiSpecific.md)
