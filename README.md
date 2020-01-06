@@ -92,7 +92,6 @@
       - [Exo player](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/ExternalLibrary/UserInterface/ExoPlayer/ExoPlayer.md)
     - [DependencyInjection](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/ExternalLibrary/DependencyInjection/DependencyInjection.md)
       - [Dagger2🏅](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/ExternalLibrary/DependencyInjection/Dagger2/Dagger2.md)
-      - [Koin](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/ExternalLibrary/DependencyInjection/Koin/Koin.md)
     - [Programming](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/ExternalLibrary/Programming/Programming.md)
       - [Rx🏅](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/ExternalLibrary/Programming/Rx/Rx.md)
       - [Coroutines](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/ExternalLibrary/Programming/Coroutines/Coroutines.md)
