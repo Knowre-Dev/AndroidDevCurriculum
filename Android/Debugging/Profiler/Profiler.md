@@ -16,3 +16,10 @@ Profiler 에서 추적할 수 있는 내용을 요약하면 아래와 같다.
 이번 장에서는 우선 CPU Profiler, Memory profiler 에 대해서만 다뤄볼 예정이다.
 
 > Note: 요즘 하드웨어 성능이 아주 뛰어나서 너무 이상하게 짜지 않는 이상 웬만하면 성능 이슈는 발생하지 않을 것이다.(*아마도?*) 하지만 실세계(사용자 환경)는 우리가 미리 예측하지 못한 일들이 벌어지므로.. Profiler를 이용해 앱의 성능을 개선하여 모든 사용자가 만족할 수 있는 앱을 만들어보자!
+
+
+
+## 📌 Next step
+
+- [Memory dump](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/content/memory_dump/Android/Debugging/Profiler/MemoryDump/MemoryDump.md)
+
