@@ -25,8 +25,10 @@ Java(+Kotlin)는 JVM의 GC를 이용해 메모리를 관리하므로 C/C++처럼
 
 ### ⚠️ 안드로이드에서 메모리릭이 발생할 수 있는 상황
 
-1. 액티비티에서 전역 static 객체를 참조하고있을 때
+1. 액티비티에서 static 객체를 참조하고있을 때
+   - IDE 에서 android context 를 static field 에 담지 말라고 memory leak warning 을 준다.
 2. Strong reference를 가진 스레드가 호출한 액티비티보다 오래 유지되어있을 때
+   - 작업이 완료되지않아 액티비티 context 가 살아있을 것이다.
 
 자세한 케이스는 구글링을 통해 참고해보자.
 
@@ -36,4 +38,4 @@ Java(+Kotlin)는 JVM의 GC를 이용해 메모리를 관리하므로 C/C++처럼
 
 안드로이드 앱에서 메모리릭이 발생했는지 판단하는 방법으로 [LeakCanary](https://square.github.io/leakcanary/)를 활용할 수 있지만, 이번 장에서는 Android studio의 memory profiler를 활용하여 메모리릭을 해결해보자.
 
-먼저 [공식문서](https://developer.android.com/studio/profile/memory-profiler)를 참고하여 Memory profiler를 사용하는 방법에 대해 숙지하고, [메모리릭 예제 프로젝트](https://github.com/Onedelay/MemoryLeakExample)를 fork 하여 메모리릭을 해결해보면 된다.
+먼저 [공식문서](https://developer.android.com/studio/profile/memory-profiler)를 참고하여 Memory profiler를 사용하는 방법에 대해 숙지하고, [메모리릭 예제 프로젝트](https://github.com/Onedelay/MemoryLeakExample)를 fork 하여 메모리릭을 해결해보면 된다. 또 [Android Memory Profiler: Getting Started](https://www.raywenderlich.com/4557771-android-memory-profiler-getting-started)에도 자세하게 설명되어있기 때문에 참고해보면 좋다.
