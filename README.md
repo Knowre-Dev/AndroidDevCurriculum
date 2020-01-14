@@ -2,7 +2,7 @@
 
 - Knowre 안드로이드 개발자로 일하기 위해 알아야 하는 기본적인 Curriculum 들을 공부할 수 있도록 가이드하는 레포지토리입니다.
   
-# Contribute
+# ⌨️ Contribute
 
 - 오타수정, 정렬 등과 관련해서는 direct push 합니다.
 - 커리큘럼 내용 입력, 잘못된 정보 수정 등은 PR 을 요청합니다.
