@@ -23,8 +23,11 @@ Young 영역은 3개의 영역으로 나뉜다. (Eden 영역, 2개의 Survivor �
 ## **Old 영역에 대한 GC**
 
 * **Serial GC**
-  * Old 영역의 GC는 mark-sweep-compact이라는 알고리즘을 사용
-  
+  * Old 영역의 GC는 mark-sweep-compact 이라는 알고리즘을 사용
+    1. Old 영역에 살아 있는 객체를 식별(Mark) 
+    2. 그 다음에는 힙(heap)의 앞 부분부터 확인하여 살아 있는 것만 남긴다(Sweep)
+    3. 각 객체들이 연속되게 쌓이도록 힙의 가장 앞 부분부터 채워서 객체가 존재하는 부분과 객체가 없는 부분으로 나눈다(Compaction)
+ 
 * **Parallel GC**
   * Parallel GC는 Serial GC와 기본적인 알고리즘은 같다. 그러나 Serial GC는 GC를 처리하는 스레드가 하나인 것에 비해, Parallel GC는 GC를 처리하는 쓰레드가 여러 개이다. 
   
