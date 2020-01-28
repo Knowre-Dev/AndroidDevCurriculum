@@ -1,6 +1,7 @@
 # 🔥 Knowre Android Dev Curriculum 2020 [WIP]
 
 - Knowre 안드로이드 개발자로 일하기 위해 알아야 하는 기본적인 Curriculum 들을 공부할 수 있도록 가이드하는 레포지토리입니다.
+- 전반적이고 기초적인 내용을 주고 다루고 있으므로 심화된 내용은 개인 스스로 더 공부하거나 PR 로 보충해주시면 좋습니다.
   
 # ⌨️ Contribute
 
