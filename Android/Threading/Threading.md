@@ -103,7 +103,7 @@ val sleepThread = Thread {
 
 sleepThread.start()
 
-Thread.slepp(500)
+Thread.sleep(500)
 
 sleepThread.interrupt()
 ```
