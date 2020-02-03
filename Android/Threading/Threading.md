@@ -56,7 +56,7 @@ Thread {
 
 ``` kotlin
 Thread {
-  while(true) {
+  while (true) {
     //do somthing
     
     Thread.sleep(millis)
@@ -92,7 +92,7 @@ Thread {
 
 ``` kotlin
 val sleepThread = Thread {
-  while(!Thread.currentThread().isInterrupted) {
+  while (!Thread.currentThread().isInterrupted) {
     try {
       Thread.sleep(1000)
     } catch (e: InterruptedException) {
@@ -121,7 +121,7 @@ sleepThread.interrupt()
 ``` kotlin
 1️⃣
 val sleepThread = Thread {
-  while(!Thread.currentThread().isInterrupted) {
+  while (!Thread.currentThread().isInterrupted) {
     try {
       Thread.sleep(1000)
     } catch (e: InterruptedException) {
@@ -140,7 +140,7 @@ sleepThread.interrupt()
 ``` kotlin
 2️⃣
 val sleepThread = Thread {
-  while(!Thread.currentThread().isInterrupted) {
+  while (!Thread.currentThread().isInterrupted) {
     try {
       Thread.sleep(1000)
     } catch (e: InterruptedException) {
@@ -170,7 +170,7 @@ internal class MyLayout constructor(
 
     class TaskThread constructor(private val weakView: WeakReference<MyLayout>) : Thread() {
         override fun run() {
-            while(!Thread.currentThread().isInterrupted) {
+            while (!Thread.currentThread().isInterrupted) {
                 try {
                     Thread.sleep(1000) //이 곳에 하고자 하는 작업을 명세, 해당 작업이 Blocking 작업이라하더라도 정상적으로 처리 됨.
 
