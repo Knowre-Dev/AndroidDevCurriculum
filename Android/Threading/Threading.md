@@ -7,7 +7,7 @@
 
 ## 📌 목표
 
-- 기본적인 Thread 의 원리와 올바를 사용 방법을 숙지한다.(본 문서에서 다루는 목표, Handler 와 Executor Service 는 아래 링크 참고)
+- 기본적인 Thread 의 원리와 올바른 사용 방법을 숙지한다.(본 문서에서 다루는 목표, Handler 와 Executor Service 는 아래 링크 참고)
 - 올바른 [Handler](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/Threading/Handler/Handler.md) 사용법을 알 수 있다.
 - [Executor Service](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/Threading/ExecutorService/ExecutorService.md) 에 대해 알 수 있다.
 
