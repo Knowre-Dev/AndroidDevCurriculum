@@ -4,7 +4,7 @@
 
 ## 📌 CI/CD 란 무엇인가?
 
-###CI (Continuous Integration) 
+### CI (Continuous Integration) 
 
 CI는 **모든 개발이 끝난 이후 코드를 관리하는 고전적 방식의 단점**을 해결하기 위해 나타난 개념이다. 개발 진행중에 다른 개발자들의 코드를 통합하는 작업을 자동화시켜 코드 품질을 유지할 수 있다. 또한 테스트 코드가 구현되어 있을 경우 정의된 테스트 케이스를 지속적으로 수행할 수 있다.
 
@@ -23,7 +23,7 @@ CI는 **모든 개발이 끝난 이후 코드를 관리하는 고전적 방식�
 
 <br>
 
-###CD (Continuous Delivery/Deployment)
+### CD (Continuous Delivery/Deployment)
 
 CD는 지속적으로 배포로, 소프트웨어가 항상 신뢰 가능한 수준에서 배포될 수 있도록 지속적으로 관리하자는 개념이다. 쉽게 말해 CI의 연장선(하지만 필수 작업)으로, 통합과 테스트가 성공적으로 이루어졌을 때 빌드 결과물(앱)을 자동으로 배포하는 것이다. 모바일 앱 기준으로 배포하는 곳은 QA 테스트를 진행할 수 있는 [Fabric Beta(deprecate)](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/KnowreSpecific/CICD/Bitrise/Beta/Beta.md)나 [Firebase app distribution](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/KnowreSpecific/CICD/Bitrise/AppDistributions/AppDistributions.md) 이 있고, 빌드된 APK 파일을 업로드할 [AWS S3](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/KnowreSpecific/CICD/Bitrise/Aws/Aws.md) 가 있다.
 
