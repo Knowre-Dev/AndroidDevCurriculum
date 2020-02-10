@@ -136,7 +136,7 @@ fun floating_point() {
 ``` kotlin
 @Test
 fun floating_point() {
-  val first  = BigDecimal(1.5F.toString()) /** 스트링을 바꾸지 않으면 여전히 오차가 발생한다. */
+  val first  = BigDecimal(1.5F.toString()) /** 스트링으로 바꾸지 않으면 여전히 오차가 발생한다. */
   val second = 0.3F.toBigDecimal() /** 이렇게 써도 무방 */
 
   val expected = 0.45F
