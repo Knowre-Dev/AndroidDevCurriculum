@@ -77,7 +77,7 @@ internal class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
 ### RecyclerView.ViewHolder
 
 ``` kotlin
-internal class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+internal class MyViewHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     companion object {
         fun newInstance(parent: ViewGroup): MyViewHolder {
@@ -100,6 +100,9 @@ internal class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) 
 - [**RecyclerView 성능 개선 팁**](https://blog.kmshack.kr/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-RecyclerView-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0%ED%8C%81/)
 - [**Kotlin Android Extensions - 리사이클러의 뷰홀더에서 올바르게 사용하는 방법**](https://www.androidhuman.com/lecture/kotlin/2017/11/26/kotlin_android_extensions_on_viewholder/)
 
+<br/>
+<br/>
+<br/>
 참조:<br/>
 https://developer.android.com/guide/topics/ui/layout/recyclerview,
 https://armful-log.tistory.com/27,
