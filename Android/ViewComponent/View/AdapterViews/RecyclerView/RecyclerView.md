@@ -43,7 +43,7 @@ internal class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
         fun onItemClick(position: Int)
     }
 
-    private var looknFeels: List<MyLayout.LooknFeel> = mutableListOf()
+    private var looknFeels: List<MyLayout.LooknFeel> = listOf()
 
     private var listener: MyListener? = null
 
@@ -65,7 +65,7 @@ internal class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
         this.listener = listener
     }
 
-    fun setLooknFeels(looknFeels: List<ChapterTitleLayout.LooknFeel>) {
+    fun setLooknFeels(looknFeels: List<MyLayout.LooknFeel>) {
         this.looknFeels = looknFeels
 
         notifyDataSetChanged()
