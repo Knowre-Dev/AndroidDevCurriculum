@@ -36,15 +36,73 @@ dependencies {
 
 ### RecyclerView.Adapter
 
+``` kotlin
+internal class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
+
+    interface MyListener {
+        fun onItemClick(position: Int)
+    }
+
+    private var looknFeels: List<MyLayout.LooknFeel> = mutableListOf()
+
+    private var listener: MyListener? = null
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        return MyViewHolder.newInstance(parent).apply {
+            itemView.setOnClickListener {
+                listener?.onItemClick(adapterPosition)
+            }
+        }
+    }
+
+    override fun getItemCount(): Int = looknFeels.size
+
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        holder.bind(looknFeels[position])
+    }
+
+    fun setListener(listener: MyListener) {
+        this.listener = listener
+    }
+
+    fun setLooknFeels(looknFeels: List<ChapterTitleLayout.LooknFeel>) {
+        this.looknFeels = looknFeels
+
+        notifyDataSetChanged()
+    }
+ }
+```
+    
+
 ### RecyclerView.ViewHolder
 
+``` kotlin
+internal class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+    companion object {
+        fun newInstance(parent: ViewGroup): MyViewHolder {
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.view_holder_my_layout, parent, false)
+
+            return MyViewHolder(view)
+        }
+    }
+
+    private val myLayout = itemView.my_layout
+
+    fun bind(looknFeel: MyLayout.LooknFeel) {
+        myLayout.setLooknFeel(looknFeel)
+    }
+
+}
+```
 
 ## 주의사항
-
-https://www.androidhuman.com/lecture/kotlin/2017/11/26/kotlin_android_extensions_on_viewholder/
+- [**RecyclerView 성능 개선 팁**](https://blog.kmshack.kr/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-RecyclerView-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0%ED%8C%81/)
+- [**Kotlin Android Extensions - 리사이클러의 뷰홀더에서 올바르게 사용하는 방법**](https://www.androidhuman.com/lecture/kotlin/2017/11/26/kotlin_android_extensions_on_viewholder/)
 
 참조:<br/>
 https://developer.android.com/guide/topics/ui/layout/recyclerview,
 https://armful-log.tistory.com/27,
 https://itmining.tistory.com/12,
-https://www.androidhuman.com/lecture/kotlin/2017/11/26/kotlin_android_extensions_on_viewholder/
+https://www.androidhuman.com/lecture/kotlin/2017/11/26/kotlin_android_extensions_on_viewholder/,
+https://blog.kmshack.kr/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-RecyclerView-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0%ED%8C%81/
