@@ -36,7 +36,7 @@
   - {Target Thread}.isInterrupted()
     - 인스턴스 메소드이며, 현재 Thread 의 interrupt state 를 반환만 한다.
 
-- Thread 를 정확히 사용하지 않은 상태로 개발하게되면 보통 개발자들은 아래와 같이 코드하여 작업한다.
+- Thread 를 정확히 이해하지 않은 상태로 개발하게되면 보통 아래와 같이 코드를 짜게 된다.
 
 ``` kotlin
 Thread {  
