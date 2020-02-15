@@ -16,7 +16,7 @@
 - Thread 를 사용함에 앞서 InterruptedException 에 대해 이해할 필요가 있다.
 - 보통, Interrupt 는 이 Interrupt 를 요청하는 Thread 에게 멈추라는 신호이며 이 신호를 Thread 가 받았을 때 발생하는 exception 이 InterruptedException 이다. (하나의 Thread 는 다른 Thread 를 즉각적으로 중지할 권한이 없다. 다만, 중지 할 것을 요청하는 interrupt 요청만 가능하다. 실제로 중지할지 말지는 요청 당하는 Thread 의 InterruptedException 에서 결정한다.)
   - **주의할 점은 Thread 가 pause 상태일때만 이 Interrupt 가 유효하다는 것이다.**
-  - Thread 가 Running 상태일 경우에는 interrupt 가 발생해도 InterruptedException 을 발생시키지 않고 Thread 가 미래에 일시 정지 상태가 되면 InterruptedException 을 발생시킨다. **(InterruptedException 이 발생한 후 interrupt state 는 clear 된다.)**
+  - Thread 가 Running 상태일 경우에는 interrupt 가 발생해도 InterruptedException 을 발생시키지 않고 Thread 가 미래에 일시 정지 상태가 되면 InterruptedException 을 발생시킨다. **(InterruptedException 이 발생한 후 interrupt state 는 clear(false 로 설정) 된다.)**
 - 이 InterruptedException 을 처리하는 방법의 표준은 없지만 보통 해당 Thread 를 멈추라는 신호로 처리되며 이에 맞는 작업이 이루어져야한다.
 (e.printStackTrace() 만하면 보통은 잘못된 처리이다. 차라리 앱이 죽는것이 나을 수도 있지만 앱이 크래쉬 되지도 않는다.)
 - interrupt 요청은 {Target Thread}.interrupt() 로 한다.
