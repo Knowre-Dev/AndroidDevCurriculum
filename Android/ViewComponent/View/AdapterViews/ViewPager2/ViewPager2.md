@@ -38,7 +38,8 @@ view_pager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
         })
 ```
 하지만 **ViewPager2**의 OnPageChangeCallback은 추상 클래스이기 때문에 **필요한 메서드만 재정의**하면 됩니다.
-```
+
+``` kotlin
 view_pager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
     override fun onPageSelected(position: Int) {
     
