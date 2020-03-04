@@ -16,7 +16,7 @@ dependencies {
     implementation "androidx.viewpager2:viewpager2:${version}"
 }
 ```
-사용법은 [RecyclerView의 사용법](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/content/recyclerView/Android/ViewComponent/View/AdapterViews/RecyclerView/RecyclerView.md)과 같다.😜
+사용법은 [RecyclerView의 사용법](https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/content/recyclerView/Android/ViewComponent/View/AdapterViews/RecyclerView/RecyclerView.md)과 같다.
 
 ### OnPageChangeCallback
 
@@ -56,7 +56,7 @@ view_pager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback
 
 ## 기타
 
-ViewPager2는 따로 layoutManager를 설정할 수 없고 내부에 LinearLayoutManager로 구현되어 있다.
+1. ViewPager2는 따로 layoutManager를 설정할 수 없고 내부에 LinearLayoutManager로 구현되어 있다.
 그렇기 때문에 orientation만 변경가능하다.
 ``` kotlin
 view_pager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
@@ -66,6 +66,11 @@ or
 view_pager.orientation = ViewPager2.ORIENTATION_VERTICAL
 ```
 
-IllegalStateException("Pages must fill the whole ViewPager2 (use match_parent)")
+2. IllegalStateException("Pages must fill the whole ViewPager2 (use match_parent)")
 
-viewholder view 
+ViewPager2 를 구성하는 ViewHolder 의 root layout은 
+``` xml
+android:layout_width="match_parent"
+android:layout_height="match_parent" 
+```
+로 구현하지 않으면 **IllegalStateException** 이 발생하게 된다.
