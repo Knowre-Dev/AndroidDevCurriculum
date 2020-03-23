@@ -74,3 +74,18 @@ android:layout_width="match_parent"
 android:layout_height="match_parent" 
 ```
 로 구현하지 않으면 **IllegalStateException** 이 발생하게 된다.
+
+3. TabLayout와 연동하는 방법
+
+```
+dependencies {
+    implementation 'com.google.android.material:material:${version}' 
+}
+```
+TabLayoutMediator를 이용하여 TabLayout와 연동하여  수 있다.
+``` kotlin
+TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+  tab.text = tabTitles[position]
+  viewPager.setCurrentItem(tab.position, true)
+}.attach()
+```
