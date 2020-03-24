@@ -21,7 +21,7 @@ ViewHolder 객체는 RecyclerView.Adapter를 확장하여 만든 어댑터에서
 
 RecyclerView와 ListView의 가장 큰 차이점은 Layout Manager와, View Holder 패턴의 의무사용, Item에 대한 뷰의 변형이나 애니메이션할 수 있는 개념이 추가되었습니다. 리스트 뷰의 성능 상의 이슈도 해결해주면서, 많은 타입의 뷰들을 가독성 있게 보여줍니다.
 
-<p align="center"><img src="https://github.com/Knowre-Dev/AndroidDevCurriculum/tree/master/Android/ViewComponent/View/AdapterViews/RecyclerView></p>
+<p align="center"><img src="https://github.com/Knowre-Dev/AndroidDevCurriculum/blob/master/Android/ViewComponent/View/AdapterViews/RecyclerView/recyclerView_listView.png?raw=true"></p>
 
 ## 사용법
 RecyclerView 위젯에 액세스하려면 다음과 같이 프로젝트에 v7 지원 라이브러리를 추가해야 합니다.
