@@ -107,7 +107,7 @@ app:layout_constrainedWidth=”true|false”
 app:layout_constrainedHeight=”true|false”
 ```
 
-- MATCH_CONSTRAINT`(== 0dp) : 설정한 제약조건 내 최대 크기
+- `MATCH_CONSTRAINT`(== 0dp) : 설정한 제약조건 내 최대 크기
 
   - 상한, 하한 설정 : `layout_constraintWidth_min`,`layout_constraintWidth_max`, `layout_constraintHeight_min`, `layout_constraintHeight_max`
   - 퍼센트로 설정 : `app:layout_constraintHeight_percent`, `app:layout_constraintWidth_percent`
@@ -137,7 +137,7 @@ width 가 `WRAP_CONTENT` 인 텍스트뷰와 width 가 200dp 인 텍스트뷰
 
 ![](./images/true.png)
 
-리사이클러뷰에 대한 적용 예제는 [여기]([https://kimch3617.tistory.com/entry/Android-RecyclerView-%EA%B0%80%EB%B3%80%EB%86%92%EC%9D%B4-%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0](https://kimch3617.tistory.com/entry/Android-RecyclerView-가변높이-지정하기))에서 읽어볼 수 있다.
+리사이클러뷰에 대한 적용 예제는 [여기](https://kimch3617.tistory.com/entry/Android-RecyclerView-%EA%B0%80%EB%B3%80%EB%86%92%EC%9D%B4-%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0)에서 읽어볼 수 있다.
 
 <br>
 
