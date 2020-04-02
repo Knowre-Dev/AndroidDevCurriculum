@@ -73,7 +73,7 @@ app:layout_constraintTop_toBottomOf="parent" // target 뷰의 top을 parent의 b
 
 ```xml
 app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintEnd_toEmdOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
 ```
 
 - bias 를 이용한 위치 조정(0.0~1.0)
