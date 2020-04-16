@@ -14,8 +14,9 @@
 - 즉, volatile 은 쓰레드 사이에서 변수의 값 변화에 대한 가시성을 보장해준다라고 할 수 있습니다.
 - 위 내용은 요약내용이며 더 상세한 내용은 아래 링크에 잘 정리되어 있기 때문에 이 내용을 일독해보시길 권장드립니다.
 
-![🇰🇷 한글 Reference](https://nesoy.github.io/articles/2018-06/Java-volatile)
-![🇺🇸 영문 Reference](http://tutorials.jenkov.com/java-concurrency/volatile.html#when-is-volatile-enough)
+[🇰🇷 한글 Reference](https://nesoy.github.io/articles/2018-06/Java-volatile)
+
+[🇺🇸 영문 Reference](http://tutorials.jenkov.com/java-concurrency/volatile.html#when-is-volatile-enough)
 
 
 ## 📌 기타사항
