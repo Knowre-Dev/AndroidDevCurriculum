@@ -53,7 +53,7 @@ class MyBroadcastReceiver : BroadcastReceiver() {
 }
 ```
 
-## 암시적 BroadcastReceiver Intent 전송
+## 명시적 BroadcastReceiver Intent 전송
 
 ``` kotlin
 val intent = Intent().apply {
