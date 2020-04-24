@@ -5,17 +5,53 @@
 참고: 앱이 Android 8.0 이상을 타겟팅하면 manifest를 사용하여 대다수 암시적 브로드캐스트(앱을 구체적으로 타겟팅하지 않는 브로드캐스트)의 수신자를 선언할 수 없습니다. 대부분의 상황에서 예약된 작업을 대신 사용할 수 있습니다. [예외](https://developer.android.com/guide/components/broadcast-exceptions)
 
 ``` xml
-    <receiver android:name=".MyBroadcastReceiver"  android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.BOOT_COMPLETED"/>
-            <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
-        </intent-filter>
-    </receiver>  
+<receiver android:name=".MyBroadcastReceiver"  android:exported="true">
+    <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+    </intent-filter>
+</receiver>  
 ```
 
 ## 컨텍스트에 등록된 수신자 (동적 BroadCast Receiver 등록)
 
+1. BroadcastReceiver 인스턴스를 생성합니다.
+
+``` kotlin
+val receiver: BroadcastReceiver = MyBroadcastReceiver()
+```
+
+2. 다음과 같이 IntentFilter를 생성하고 registerReceiver(BroadcastReceiver, IntentFilter)를 호출하여 수신자를 등록합니다.
+``` kotlin
+val filter = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION).apply {
+    addAction(Intent.ACTION_AIRPLANE_MODE_CHANGED)
+}
+
+registerReceiver(br, filter)
+
+```
+
 [참고](https://developer.android.com/guide/components/broadcasts#context-registered-receivers)
+
+## 시스템에서 수신하는 각 브로드캐스트를 처리
+
+``` kotlin
+private const val TAG = "MyBroadcastReceiver"
+
+class MyBroadcastReceiver : BroadcastReceiver() {
+
+    override fun onReceive(context: Context, intent: Intent) {
+        StringBuilder().apply {
+            append("Action: ${intent.action}\n")
+            append("URI: ${intent.toUri(Intent.URI_INTENT_SCHEME)}\n")
+            toString().also { log ->
+                Log.d(TAG, log)
+                Toast.makeText(context, log, Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+}
+```
 
 ## 암시적 BroadcastReceiver Intent 전송
 
