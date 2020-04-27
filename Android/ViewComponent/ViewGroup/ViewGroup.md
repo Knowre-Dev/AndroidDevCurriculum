@@ -40,7 +40,7 @@ View 클래스에는 `getWidth()` 와 같은 메서드를 제공하지만, `setW
 
 > 그래서 ViewGroup 은 자기 자신에 대해 그릴게 없으므로, View 처럼 다시 그려져야할 경우에도 `onDraw()` 메서드가 호출되지 않는다. 따라서 뷰 그룹을 다시 그리도록 요청하기 위해서는 `dispatchDraw()` 를 오버라이드하거나 `setWillNotDrawEnabled(false)` 메서드로 설정을 바꿔줘야한다.
 
-레이아웃을 그리는 과정은 뷰의 크기를 결정하는 **측정(measure)**단계와 어디에 배치할지 결정하는 **레이아웃(layout)**단계를 거쳐 그려진다. 
+레이아웃을 그리는 과정은 뷰의 크기를 결정하는 측정(measure)단계와 어디에 배치할지 결정하는 레이아웃(layout)단계를 거쳐 그려진다. 
 
 ### 👉🏻 Measure pass
 
@@ -48,6 +48,12 @@ View 클래스에는 `getWidth()` 와 같은 메서드를 제공하지만, `setW
 
 - ViewGroup.LayoutParams : 자식뷰 자신이 어떻게 측정되고 위치를 정할지 부모뷰에 요청할 때
 - ViewGroup.MeasureSpec : 부모 뷰가 자식뷰에게 요구사항을 전달할 때
+  - UNSPECIFIED : 부모 뷰는 자식 뷰가 원하는 치수대로 결정한다.
+    - 예를들어 자식뷰의 너비가 240이라면, 원하는 높이를 알기 위해 UNSPECIFIED 로 설정된 높이와 EXACTLY 240 으로 설정된 너비를 가지고 자식 뷰에 대한 measure() 메서드를 호출할 수 있다.
+  - EXACTLY : 부모 뷰가 자식 뷰에게 정확한 크기를 강요한다.
+    - 자식뷰의 자식뷰(자손뷰)는 이 크기 안에서 맞춰져야한다.
+  - AT_MOST : 부모 뷰가 자식 뷰에게 최대 크기를 부과한다.
+    - 자식뷰의 자식뷰(자손뷰)는 이 크기 안에서 맞춰져야한다.
 
 ### 👉🏻 Layout pass
 
@@ -61,7 +67,8 @@ View 클래스에는 `getWidth()` 와 같은 메서드를 제공하지만, `setW
 
 ## References
 
-- [Android Developers - layouts](https://developer.android.com/guide/topics/ui/declaring-layout)
+- [Android Developers - Layouts](https://developer.android.com/guide/topics/ui/declaring-layout)
+- [Android Developers - How Android Draws Views](https://developer.android.com/guide/topics/ui/how-android-draws)
 - [<안드로이드 뷰, 뷰 그룹, 레이아웃> 개념 정리](https://mattlee.tistory.com/74)
 - [[안드로이드] 뷰가 그려지는 과정](https://namsieon.com/339)
 
