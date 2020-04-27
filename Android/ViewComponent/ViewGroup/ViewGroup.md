@@ -1,26 +1,11 @@
-
-
-[TOC]
-
-<br>
-
 # ViewGroup
 
-기초적인 내용은 안다는 가정 하에 안드로이드에서 UI를 구성할 때 필요한 ViewGroup 에 대하여 다뤄본다.
+안드로이드에서 UI를 구성할 때 필요한 ViewGroup 에 대하여 다뤄본다.
 
-<br>
-
-```
-<details>
-<summary>기초적인 내용은 여기서 알아보기</summary>
-<div markdown="1">
+기초적인 내용은 아래 레퍼런스를 참고하면 된다.
 
 - [Android Developers - layouts](https://developer.android.com/guide/topics/ui/declaring-layout)
 - [<안드로이드 뷰, 뷰 그룹, 레이아웃> 개념 정리](https://mattlee.tistory.com/74)
-
-</div>
-</details>
-```
 
 <br>
 
