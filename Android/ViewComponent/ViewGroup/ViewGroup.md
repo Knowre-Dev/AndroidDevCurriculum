@@ -2,11 +2,6 @@
 
 안드로이드에서 UI를 구성할 때 필요한 ViewGroup 에 대하여 다뤄본다.
 
-기초적인 내용은 아래 레퍼런스를 참고하면 된다.
-
-- [Android Developers - layouts](https://developer.android.com/guide/topics/ui/declaring-layout)
-- [<안드로이드 뷰, 뷰 그룹, 레이아웃> 개념 정리](https://mattlee.tistory.com/74)
-
 <br>
 
 ## 📌 ViewGroup 의 종류와 LayoutParams
@@ -62,6 +57,11 @@ View 클래스에는 `getWidth()` 와 같은 메서드를 제공하지만, `setW
 
 뷰의 `measure()`함수가 반환할때, 뷰의 `getMeasureWidth()`와 `getMeasureHeight()`값이 설정된다. 만약 자식 뷰 측정값의 합이 너무 크거나 작을 경우 다시 `measure()`함수를 호출하여 크기를 재측정한다.
 
-뷰를 그리는 과정에 대한 자세한 내용은 [[안드로이드] 뷰가 그려지는 과정](https://namsieon.com/339) 에서 확인할 수 있다.
-
 <br>
+
+## References
+
+- [Android Developers - layouts](https://developer.android.com/guide/topics/ui/declaring-layout)
+- [<안드로이드 뷰, 뷰 그룹, 레이아웃> 개념 정리](https://mattlee.tistory.com/74)
+- [[안드로이드] 뷰가 그려지는 과정](https://namsieon.com/339)
+
